@@ -4,7 +4,7 @@
 IP="40.121.162.26"
 
 # Name to associate with public IP address
-DNSNAME=servicetracker
+DNSNAME=seco
 
 # Get the resource-id of the public ip
 PUBLICIPID=$(az network public-ip list --query "[?ipAddress!=null]|[?contains(ipAddress, '$IP')].[id]" --output tsv)
